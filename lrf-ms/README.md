@@ -21,3 +21,10 @@ This tool works on fasta files.
     -t <number of threads> : number of threads to use (default: 8)
     -h : print this help
 ```
+
+## SPIRE MS 2025
+
+Modified to work on same file formats as the GPU Matching Statistics code with command:
+```sh
+./lrf_ms -z T -t <number of threads> (default: 8)
+```
