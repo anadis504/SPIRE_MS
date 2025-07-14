@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=ms_150
+#SBATCH -M kale
+#SBATCH -o result-da_11374549_50_7-%j.txt
+#SBATCH -p short
+#SBATCH -c 60
+#SBATCH -t 1200
+#SBATCH --mem=152880
+module load GCC/11.3.0
+
+~/proj/phd/lrf-ms/execute_lrf-ms.sh ~/proj/Data/MS_colis/coli3682_dataset_150.txt 60 >> coli3682_dataset_150.lrf-ms.log
